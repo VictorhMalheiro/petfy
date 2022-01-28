@@ -1,20 +1,20 @@
-import { ReactNode } from 'react';
-
-import { Container } from './styles';
+import { ReactNode } from 'react'
+import { Container } from './styles'
 
 interface ButtonProps {
-	children: ReactNode;
+	children: ReactNode
+	variant?: string
+	hoverColor?: string
 }
 
-function Button({ children }: ButtonProps) {
+function Button({ children, variant, hoverColor }: ButtonProps) {
 	return (
 		<>
-			<label>Button</label>
-			<Container>
+			<Container variant={variant} hoverColor={hoverColor}>
 				{children}
 			</Container>
 		</>
-	);
-};
+	)
+}
 
-export default Button;
+export default Button
