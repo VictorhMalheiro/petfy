@@ -4,9 +4,7 @@ import '../Input/styles'
 export function Input(name, ...rest) {
 	return (
 		<>
-			<Container>
-				<input type="text" id={name} {...rest} />
-			</Container>
+			<Container type="text" id={name} {...rest} />
 		</>
 	)
 }
